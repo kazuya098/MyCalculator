@@ -1,0 +1,21 @@
+# ---- 编译产物（由 gcc 生成，不进版本库）----
+*.exe
+*.o
+*.obj
+*.out
+*.a
+*.so
+*.dll
+*.dSYM/
+
+# ---- 编辑器 / IDE ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ---- 操作系统生成的文件 ----
+Thumbs.db
+Desktop.ini
+.DS_Store

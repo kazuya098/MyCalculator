@@ -1,0 +1,12 @@
+# 统一换行符：仓库内一律存 LF，检出时由各平台自行决定
+* text=auto
+
+# C 源码显式声明为文本，参与换行符归一化
+*.c    text
+*.h    text
+*.txt  text
+
+# 二进制文件不做任何转换
+*.exe  binary
+*.png  binary
+*.jpg  binary
