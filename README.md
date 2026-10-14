@@ -57,6 +57,26 @@ gcc Calculatormain.c List.c ListStack.c Print.c -o Calculatormain -lm
 0.5 * (cos(PI/3) - sin(PI/6)) + 8.2 -> 8.200000
 ```
 
+## 使用示例
+
+**批量模式** —— 传两个参数（输入文件、输出文件），程序逐行计算并把 `表达式=结果` 写入输出文件：
+
+```bash
+./Calculatormain.exe expstrings.txt results_new.txt
+# Batch calculation has been completed, results has been saved to: results_new.txt
+```
+
+**交互模式** —— 不带参数直接运行，从标准输入读一行表达式：
+
+```bash
+./Calculatormain.exe
+# Please enter an expression: 2*sin(PI/6)+1
+# The result is:2.000000
+```
+
+交互模式下若表达式非法（括号不匹配、三角函数缺括号等），`Transform` 返回 `ERROR`，
+结果按 `nan` 处理，程序不会崩溃。
+
 ## 版本库约定
 
 `*.exe` 等编译产物由 `.gitignore` 忽略，不纳入版本管理 —— 编译产物可由源码随时重建，
