@@ -61,3 +61,7 @@ gcc Calculatormain.c List.c ListStack.c Print.c -o Calculatormain -lm
 
 `*.exe` 等编译产物由 `.gitignore` 忽略，不纳入版本管理 —— 编译产物可由源码随时重建，
 提交它们只会让 diff 充满二进制噪声。克隆仓库后按上面的命令重新编译即可。
+
+## 更新日志
+
+- 2026-10-14 协作者补充：新增本「更新日志」小节，用于演示 `git pull`。
