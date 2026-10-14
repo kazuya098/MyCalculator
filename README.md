@@ -65,3 +65,4 @@ gcc Calculatormain.c List.c ListStack.c Print.c -o Calculatormain -lm
 ## 更新日志
 
 - 2026-10-14 协作者补充：新增本「更新日志」小节，用于演示 `git pull`。
+- 2026-10-14 本地：补充批量模式的参数顺序说明。
